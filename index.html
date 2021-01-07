@@ -14,17 +14,21 @@
 	<main class="content">
 		<section class="intro">
 			<div class="container">
-				<h2>About me.</h2>
-				<p>{{ site.description }}</p>
+				<h2>About me</h2>
+				<p>{{ site.description }} <mark>Shirley</mark>.</p>
+				<h4>I strive to craft elegant solutions to real problems, in a way that is both enjoyable to interact with and beautiful to look at.
+					<br></br>
+					<em><a title="Resume" href="{{ site.baseurl | append: "/assets/ShirleyXiao_Resume.pdf" }}">View my resumé →</a></em>
+				</h4>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
-				<h2>Projects I have worked on.</h2>
+				<h2>Featured Projects</h2>
 				<ul class="projects-list">
 					{% for item in site.categories.projects reversed %}
 						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
+							<a class="disabled" href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
 									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 								</div>

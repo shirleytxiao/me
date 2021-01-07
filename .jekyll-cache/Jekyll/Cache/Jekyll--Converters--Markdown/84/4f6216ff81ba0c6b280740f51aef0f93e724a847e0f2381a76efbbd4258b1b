@@ -1,0 +1,2 @@
+I"d<p>A Java-based version-control system for local directories based on the basic features of Git. Functionality includes making commits of one or more files, checking out files/commits, viewing backup logs, maintaining branches, and merging changes between branches. Utilized hashing and serialization to save states of internal commit tree structures.</p>
+:ET

@@ -1,18 +1,26 @@
 .container {
 	display: block;
 	margin: 0 auto;
-	max-width: 70em;
+	max-width: 30em;
 	padding: 0 3rem;
 	@include clearfix;
 }
 
 .header {
 	background: $color-white;
-	padding: 3rem 0;
+	padding: 10rem 0;
 }
 
-.logo {
+.logoleft {
 	float: left;
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1;
+}
+
+.logoright {
+	float: right;
 	font-size: 1.8rem;
 	font-weight: 600;
 	margin: 0;
@@ -23,7 +31,8 @@
 	float: right;
 
 	a {
-		@extend .logo;
+		@extend .logoleft;
+		@extend .logoright;
 	}
 }
 
@@ -37,7 +46,7 @@
 	z-index: 1;
 
 	@media (min-width: $breakpoint-medium) {
-		padding: 21rem 0 0;
+		padding: 3rem 0 0;
 		margin-bottom: 23.42rem;
 	}
 }
@@ -354,12 +363,19 @@
 	z-index: -1;
 }
 
-.contact,
-.follow {
+.contact {
 	@media (min-width: $breakpoint-medium) {
 		float: left;
 		margin-bottom: 0;
-		width: 33.33333%;
+		width: 50%;
+	}
+}
+
+.follow {
+	@media (min-width: $breakpoint-medium) {
+		float: right;
+		margin-bottom: 0;
+		width: 30%;
 	}
 }
 
