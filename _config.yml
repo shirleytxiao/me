@@ -8,7 +8,7 @@ linkedin: "https://www.linkedin.com/in/s-xiao"
 github: "https://github.com/shirleytxiao/"
 
 # Site config
-baseurl: ""
+baseurl: "shirleytxiao.github.io/me"
 highlighter: rouge
 sass:
   sass_dir: assets/scss
