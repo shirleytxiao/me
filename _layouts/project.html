@@ -8,7 +8,18 @@
 	{% include head.html %}
 </head>
 <body>
-	{% include header.html %}
+	<header class="header">
+		<div class="container">
+			<h2 class="logoleft">
+				<!-- <a title="Projects" href="{{ site.baseurl | append: "/projects" }}">PROJECTS</a> -->
+			</h2>
+			<h2 class="logoright">
+				<!-- <a title="About" href="{{ site.baseurl | append: "/about" }}">ABOUT</a> -->
+			</h2>
+		</div>
+	</header>
+	
+	<!-- {% include header.html %} -->
 	<main class="content">
 		<section class="project">
 			<div class="container">
@@ -17,15 +28,15 @@
 					<h1>
 						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 					</h1>
-					<span class="h2">Role</span>
-					{{ page.content }}
+					<span class="h2">Description</span>
+					<h4> {{ page.content }} </h4>
 					<div class="project-meta">
 						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						<!-- <span class="h2">Agency</span> -->
-						<!-- <p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p> -->
+						<h4>{{ page.project.tech }}</h4>
+						<span class="h2">Links</span>
+						<h4 style="text-decoration: underline;"><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></h4>
 						<span class="h2">Year</span>
-						<p>{{ page.agency.year }}</p>
+						<h4>{{ page.agency.year }}</h4>
 					</div>
 				</article>
 				<aside>
