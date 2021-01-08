@@ -5,11 +5,11 @@ html {
 body {
 	background: $color-white;
 	color: $color-black;
-	font-family: $font-sailec;
+	font-family: $font-sailec-bold;
 	font-size: 1.8em;
 	line-height: 1.6;
 	font-weight: 600;
-	-webkit-font-smoothing: antialiased;
+	// -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -68,11 +68,11 @@ h6,
 .h6 {
 	background: lightpink;
 	color: $color-black;
-	font-family: $font-sailec;
+	font-family: $font-sailec-bold;
 	font-size: 1.8em;
 	line-height: 1.6;
 	font-weight: 600;
-	-webkit-font-smoothing: antialiased;
+	// -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -97,7 +97,7 @@ a.disabled, a.disabled:hover{
 ul {
 	color: $color-grey;
 	font-size: 1.4rem;
-	font-family: $font-sailec;
+	font-family: $font-sailec-bold;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;	
