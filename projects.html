@@ -1,0 +1,65 @@
+---
+title: Projects
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.author }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	{% include head.html %}
+</head>
+<body>
+	{% include header.html %}
+	<main class="content">
+
+        <section class="projects">
+			<div class="container">
+				<h2>Featured Projects</h2>
+				<ul class="projects-list">
+                    {% for item in site.categories.projects reversed %}
+						<li>
+							<a class="disabled" href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+                        </li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+
+		<!-- <section class="intro">
+			<div class="container">
+				<h2>About</h2>
+                <p style="margin-bottom:0.7em;font-size:1.6em;"> Hello! I'm Shirley.</p>
+                
+
+                <div class="contentabout">
+                    <img src="/polaroid.png">
+                    <div>
+                      <h4>Most of all, I like creating. Programming and designing allow me to build 
+                        beautiful experiences out of budding ideas, and empathetic solutions to complex
+                        problems. I solve problems through observation and I'm fascinated by the 
+                        connections that bring people together.
+                        <br></br>
+                        I study computer science at the University of California, Berkeley. My hobbies 
+                        include chasing sunsets, curating playlists, and making art.</h4>
+                    </div>
+                  </div>
+                
+                <h3 style="margin-bottom:0.5em;"> About this website </h3>
+                <h4>This site was made with Jekyll, Sass, and hosted on Github Pages.</h4>
+			</div>
+		</section> -->
+
+	</main>
+	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>

@@ -14,9 +14,9 @@
 	<main class="content">
 		<section class="intro">
 			<div class="container">
-				<h2>About me</h2>
-				<p style="margin-bottom:0.7em;font-size:1.8em;">{{ site.description }} <mark>Shirley</mark>.</p>
-				<h4>(11) I strive to craft elegant solutions to real problems, in a way that is both enjoyable to interact with and beautiful to look at.
+				<h2> </h2>
+				<p style="margin-bottom:0.7em;font-size:1.8em;line-height:1.2em">Hi, I'm <mark>Shirley</mark> — a web + software developer with an eye for design.</p>
+				<h4>I strive to craft elegant solutions to real problems, in a way that is both enjoyable to interact with and beautiful to look at.
 					<br></br>
 					<em><a title="Resume" href="{{ site.baseurl | append: "/assets/ShirleyXiao_Resume.pdf" }}">View my resumé →</a></em>
 				</h4>
@@ -27,6 +27,7 @@
 				<h2>Featured Projects</h2>
 				<ul class="projects-list">
 					{% for item in site.categories.projects reversed %}
+					{% if item.categories contains 'featured' %}
 						<li>
 							<a class="disabled" href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
@@ -36,6 +37,7 @@
 								<h3>{{ item.project.title }}</h3>
 							</a>
 						</li>
+					{% endif %}
 					{% endfor %}
 				</ul>
 			</div>

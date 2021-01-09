@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: $color-white;
+	background: #faf9f9;
 	color: $color-black;
 	font-family: $font-sailec-bold;
 	font-size: 1.8em;
@@ -48,7 +48,7 @@ h4,
 .h4 {
 	color: $color-grey;
 	font-family: $font-sailec-light;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
     margin: 0;
@@ -66,7 +66,7 @@ h5,
 
 h6,
 .h6 {
-	background: lightpink;
+	background: #98c9a3;
 	color: $color-black;
 	font-family: $font-sailec-bold;
 	font-size: 1.8em;
@@ -86,7 +86,8 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	background-color: lightpink;
+	background-color: #98c9a3;
+	background-size: 50% 50%;
 }
 
 a.disabled, a.disabled:hover{
@@ -126,7 +127,7 @@ abbr[title] {
 }
 
 code {
-	background: $color-white;
+	background: #faf9f9;
 	border: 1px solid $color-silver-chalice;
 	border-radius: 3px;
 	font-family: $font-lekton;
@@ -215,7 +216,7 @@ pre {
 
 mark {
 	display: inline-block;
-	line-height: 1.8em;
+	// line-height: 1.8em;
 	padding-bottom: 0em;
-	background: lightpink;
+	background: #98c9a3;
   }
