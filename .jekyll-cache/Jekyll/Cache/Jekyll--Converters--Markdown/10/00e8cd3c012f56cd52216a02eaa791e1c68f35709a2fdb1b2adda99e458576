@@ -1,0 +1,2 @@
+I"Y<p>A Python library based on Numpy that supports large, multi-dimensional arrays and matrices, and a corresponding collection of mathematical functions using the Python-C interface. Applied performance optimization techniques to speed up mathematical operations, with an emphasis on unrolling, SIMD instructions, and OpenMP parallelization.</p>
+:ET

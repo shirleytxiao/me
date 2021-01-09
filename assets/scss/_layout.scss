@@ -337,6 +337,11 @@
 			}
 		}
 
+		&.next:hover {
+			text-decoration: none;
+			background-color: transparent;
+		}
+
 		&.prev {
 			span {
 				position: relative;
@@ -348,6 +353,11 @@
 					content: "\02190";
 				}
 			}
+		}
+
+		&.prev:hover {
+			text-decoration: none;
+			background-color: transparent;
 		}
 	}
 
